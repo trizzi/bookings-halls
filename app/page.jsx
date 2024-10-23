@@ -7,7 +7,7 @@ export default function Home() {
 		<>
 			<Heading title='Available Rooms' />
 			{rooms.length > 0 ? (
-				<RoomCard room={room} />
+				rooms.map((room) => <RoomCard room={room} />)
 			) : (
 				<p>No rooms available at the moment</p>
 			)}
