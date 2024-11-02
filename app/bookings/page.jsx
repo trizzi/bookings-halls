@@ -1,7 +1,25 @@
 import React from 'react';
+import Heading from '@/components/Heading';
+import getMyCreatedBookings from '../actions/getMyCreatedBookings';
+import BookedRoomCard from '@/components/BookedRoomCard';
 
-const BookingsPage = () => {
-	return <div>BookingsPage</div>;
+const BookingsPage = async () => {
+	const bookings = await getMyCreatedBookings();
+
+	return (
+		<>
+			{bookings === 0 ? (
+				<p className='mt-4 text-gray-600'>You have no bookings</p>
+			) : (
+				bookings.map((booking) => (
+					<BookedRoomCard
+						key={booking.$id}
+						booking={booking}
+					/>
+				))
+			)}
+		</>
+	);
 };
 
 export default BookingsPage;
