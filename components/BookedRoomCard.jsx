@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import CancelBookingButton from './CancelBookingButton';
 
 const BookedRoomCard = ({ booking }) => {
 	const { room_id: room } = booking;
@@ -42,11 +43,7 @@ const BookedRoomCard = ({ booking }) => {
 					className='bg-blue-500 text-white px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-blue-700'>
 					View Room
 				</Link>
-				<button
-					href='#'
-					className='bg-red-500 text-white px-4 py-2 rounded w-full sm:w-auto text-center hover:bg-red-700'>
-					Cancel Booking
-				</button>
+				<CancelBookingButton bookingId={booking.$id} />
 			</div>
 		</div>
 	);

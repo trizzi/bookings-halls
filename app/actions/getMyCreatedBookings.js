@@ -18,7 +18,7 @@ async function getMyCreatedBookings() {
 		const { user } = await checkAuth();
 		if (!user) {
 			return {
-				error: 'You must be logged in to view bookins',
+				error: 'You must be logged in to view bookings',
 			};
 		}
 
