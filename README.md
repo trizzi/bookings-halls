@@ -1,4 +1,4 @@
-# Project Name
+# Booking Halls
 A modern Next.js web application built with React 18, Tailwind CSS, Appwrite, Context API, Luxon, and React-Toastify. This application demonstrates efficient state management, real-time database interaction, and seamless UI/UX with dark and light mode themes.
 
 ## Table of Contents
@@ -34,8 +34,14 @@ A modern Next.js web application built with React 18, Tailwind CSS, Appwrite, Co
 
 ## Project Images
 <img width="1680" alt="Screenshot 2024-11-03 at 22 26 30" src="https://github.com/user-attachments/assets/18219e96-0bd6-4d9d-bc55-009e475543fc">
+<img width="1680" alt="Screenshot 2024-11-03 at 22 26 36" src="https://github.com/user-attachments/assets/99b9fc01-7b10-460e-b5e7-8f89ebcf1d40">
+<img width="1680" alt="Screenshot 2024-11-03 at 22 26 52" src="https://github.com/user-attachments/assets/8ee9734a-4910-45a0-85e7-f72f015fb579">
+<img width="1680" alt="Screenshot 2024-11-03 at 22 26 57" src="https://github.com/user-attachments/assets/93cb2f90-1bcb-4c0f-9d6b-f75bce4859a5">
+<img width="1680" alt="Screenshot 2024-11-03 at 22 27 02" src="https://github.com/user-attachments/assets/cfb3b677-3158-49d9-af5e-dd39926affa1">
+<img width="1680" alt="Screenshot 2024-11-03 at 22 27 08" src="https://github.com/user-attachments/assets/c46ab8f4-3ea0-4c5f-8495-9bc5a41e1e1e">
+<img width="1680" alt="Screenshot 2024-11-03 at 22 35 22" src="https://github.com/user-attachments/assets/4a013a34-81e0-412c-9b91-fec6dd15df30">
 
-  
+
 # Installation
 ##Prerequisites
 - Node.js >= 14.x and npm >= 6.x
@@ -44,14 +50,14 @@ A modern Next.js web application built with React 18, Tailwind CSS, Appwrite, Co
 ## Steps
 Clone the repository:
 
-`bash
+``bash
 Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/trizzi/bookings-halls.git
+cd booking-halls
 
 ##Install dependencies:
 
-`bash
+``bash
 Copy code
 npm install
 Set up Appwrite (see Configuration below).
@@ -59,7 +65,7 @@ Set up Appwrite (see Configuration below).
 ## Configuration
 - Create a .env.local file in the root of your project with the following environment variables:
 
-`bash
+``bash
 Copy code
 NEXT_PUBLIC_APPWRITE_ENDPOINT=https://<YOUR_APPWRITE_ENDPOINT>
 NEXT_PUBLIC_APPWRITE_PROJECT=<YOUR_PROJECT_ID>
@@ -68,7 +74,7 @@ Replace <YOUR_APPWRITE_ENDPOINT> and <YOUR_PROJECT_ID> with your Appwrite projec
 ## Usage
 Run the development server:
 
-`bash
+``bash
 Copy code
 npm run dev
 Open your browser:
@@ -83,7 +89,7 @@ Open your browser:
 
 
 ## Folder Structure
-`plaintext
+``plaintext
 Copy code
 .
 ├── components         # Reusable UI components
