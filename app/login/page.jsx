@@ -4,13 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { useActionState } from 'react';
+import { useFormState } from 'react-dom';
 import createSession from '../actions/createSession';
 import { toast } from 'react-toastify';
 import { useAuth } from '@/context/authContext';
 
 const LoginPage = () => {
-	const [state, formAction] = useActionState(createSession, {});
+	const [state, formAction] = useFormState(createSession, {});
 	const router = useRouter();
 	const { isAuthenticated, setIsAuthenticated } = useAuth();
 

@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useActionState } from 'react-dom';
+import { useFormState } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-toastify';
 import createUser from '@/app/actions/createUser';
 import Link from 'next/link';
 
 const RegisterPage = () => {
-	const [state, formAction] = useActionState(createUser, {});
+	const [state, formAction] = useFormState(createUser, {});
 	const router = useRouter();
 
 	useEffect(() => {
