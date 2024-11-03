@@ -25,10 +25,10 @@ const RoomPage = async ({ params }) => {
 	return (
 		<>
 			<Heading title={room.name} />
-			<div className='bg-white shadow rounded-lg p-6'>
+			<div className='bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow rounded-lg p-6'>
 				<Link
 					href='/'
-					className='flex items-center text-gray-600 hover:text-gray-800 mb-4'>
+					className='flex items-center text-gray-600 dark:text-white hover:text-gray-800 mb-4'>
 					<FaChevronLeft className='inline mr-1' />
 					<span className='ml-2'>Back to Rooms</span>
 				</Link>
@@ -43,27 +43,35 @@ const RoomPage = async ({ params }) => {
 					/>
 
 					<div className='mt-4 sm:mt-0 sm:flex-1'>
-						<p className='text-gray-600 mb-4'>{room.description}</p>
+						<p className='text-gray-600 dark:text-white mb-4'>
+							{room.description}
+						</p>
 
 						<ul className='space-y-2'>
 							<li>
-								<span className='font-semibold text-gray-800'>Size:</span>{' '}
+								<span className='font-semibold text-gray-800 dark:text-white'>
+									Size:
+								</span>{' '}
 								{room.sqft}
 								{''}
 								sq ft
 							</li>
 							<li>
-								<span className='font-semibold text-gray-800'>
+								<span className='font-semibold text-gray-800 dark:text-white'>
 									Availability:
 								</span>
 								{room.availability}
 							</li>
 							<li>
-								<span className='font-semibold text-gray-800'>Price:</span>$
-								{room.price_per_hour}/hour
+								<span className='font-semibold text-gray-800 dark:text-white'>
+									Price:
+								</span>
+								${room.price_per_hour}/hour
 							</li>
 							<li>
-								<span className='font-semibold text-gray-800'>Address:</span>{' '}
+								<span className='font-semibold text-gray-800 dark:text-white'>
+									Address:
+								</span>{' '}
 								{room.address}
 							</li>
 						</ul>

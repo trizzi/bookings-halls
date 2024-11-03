@@ -27,13 +27,13 @@ const BookedRoomCard = ({ booking }) => {
 		return `${day} ${month} at ${time}`;
 	};
 	return (
-		<div className='bg-white shadow rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center'>
+		<div className='bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center dark:border-b-2'>
 			<div>
 				<h4 className='text-lg font-semibold'>{room.name}</h4>
-				<p className='text-sm text-gray-600'>
+				<p className='text-sm text-gray-600 dark:text-white'>
 					<strong>Check In:</strong> {formatDate(booking.check_in)}
 				</p>
-				<p className='text-sm text-gray-600'>
+				<p className='text-sm text-gray-600 dark:text-white'>
 					<strong>Check Out:</strong> {formatDate(booking.check_out)}
 				</p>
 			</div>

@@ -10,7 +10,7 @@ const RoomCard = ({ room }) => {
 
 	const imageSrc = room.image ? imageUrl : '/images/no-image.jpg';
 	return (
-		<div className='bg-white shadow rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center'>
+		<div className='bg-white dark:bg-gray-900 text-gray-900 dark:text-white shadow rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center dark:border-b-2'>
 			<div className='flex flex-col sm:flex-row sm:space-x-4'>
 				<Image
 					src={imageSrc}
@@ -21,16 +21,25 @@ const RoomCard = ({ room }) => {
 				/>
 				<div className='space-y-1'>
 					<h4 className='text-lg font-semibold'>{room.name}</h4>
-					<p className='text-sm text-gray-600'>
-						<span className='font-semibold text-gray-800'> Address:</span>{' '}
+					<p className='text-sm text-gray-600 dark:text-white'>
+						<span className='font-semibold text-gray-800 dark:text-white'>
+							{' '}
+							Address:
+						</span>{' '}
 						{room.address}
 					</p>
-					<p className='text-sm text-gray-600'>
-						<span className='font-semibold text-gray-800'> Availability:</span>
+					<p className='text-sm text-gray-600 dark:text-white'>
+						<span className='font-semibold text-gray-800 dark:text-white'>
+							{' '}
+							Availability:
+						</span>
 						{room.availabilty}
 					</p>
-					<p className='text-sm text-gray-600'>
-						<span className='font-semibold text-gray-800'> Price:</span>
+					<p className='text-sm text-gray-600 dark:text-white'>
+						<span className='font-semibold text-gray-800 dark:text-white'>
+							{' '}
+							Price:
+						</span>
 						{room.price_per_hour}/hour
 					</p>
 				</div>
