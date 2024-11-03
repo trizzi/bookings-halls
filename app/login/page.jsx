@@ -44,7 +44,7 @@ const LoginPage = () => {
 							type='email'
 							id='email'
 							name='email'
-							className='border rounded w-full py-2 px-3'
+							className='border rounded w-full py-2 px-3 text-gray-700'
 							required
 						/>
 					</div>
@@ -59,7 +59,7 @@ const LoginPage = () => {
 							type='password'
 							id='password'
 							name='password'
-							className='border rounded w-full py-2 px-3'
+							className='border rounded w-full py-2 px-3 text-gray-700'
 							required
 						/>
 					</div>
@@ -71,7 +71,7 @@ const LoginPage = () => {
 							Login
 						</button>
 
-						<p>
+						<p className='text-gray-700'>
 							No account?
 							<Link
 								href='/register'
