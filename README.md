@@ -50,14 +50,14 @@ A modern Next.js web application built with React 18, Tailwind CSS, Appwrite, Co
 ## Steps
 Clone the repository:
 
-``bash
+```bash
 Copy code
 git clone https://github.com/trizzi/bookings-halls.git
 cd booking-halls
 
 ##Install dependencies:
 
-``bash
+```bash
 Copy code
 npm install
 Set up Appwrite (see Configuration below).
@@ -65,7 +65,7 @@ Set up Appwrite (see Configuration below).
 ## Configuration
 - Create a .env.local file in the root of your project with the following environment variables:
 
-``bash
+```bash
 Copy code
 NEXT_PUBLIC_APPWRITE_ENDPOINT=https://<YOUR_APPWRITE_ENDPOINT>
 NEXT_PUBLIC_APPWRITE_PROJECT=<YOUR_PROJECT_ID>
@@ -74,7 +74,7 @@ Replace <YOUR_APPWRITE_ENDPOINT> and <YOUR_PROJECT_ID> with your Appwrite projec
 ## Usage
 Run the development server:
 
-``bash
+```bash
 Copy code
 npm run dev
 Open your browser:
@@ -89,7 +89,7 @@ Open your browser:
 
 
 ## Folder Structure
-``plaintext
+```plaintext
 Copy code
 .
 ├── components         # Reusable UI components
